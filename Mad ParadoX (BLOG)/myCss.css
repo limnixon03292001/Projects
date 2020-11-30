@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap'); 
+*,
+*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    min-width: 280px;
+}
+html,body{
+    font-family: 'Questrial', sans-serif;
+    margin:0;
+    padding:0;
+    font-size:10px;
+    line-height: 1.7rem;
+}
+nav{
+    padding:1rem;
+    z-index: 2;
+}
+nav .title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+nav .nav-center{
+    max-width: 1200px;
+    margin:0 auto;
+    border-bottom: 0.1rem solid black;
+}
+/** M A I N - N A V */
+.main-nav{
+    display: none;
+}
+.main-nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.7rem;
+    padding: 0.5rem 0.7rem;
+    display: inline-block;
+}
+.main-nav a.active{
+    border:1px solid black;
+}
+.main-nav .btn{
+    padding:0.7rem 1rem;
+    background-color: #FF6366;
+    color:white;
+    border-radius:0.5rem;
+}
+/**END OF M A I N - N A V */
+
+/**H E A D E R S E C T I O N*/
+.wrapper-section{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper-section .left-content p{
+    max-width: 450px;
+    font-size: 1.5rem;
+}
+.wrapper-section .btn{
+    padding:0.8rem 1.7rem;
+    background-color: #FF6366;
+    color:white;
+    border-radius:0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    display: inline-block;
+}
+.wrapper-section .img-wrapper{
+    max-width: 500px;
+}
+.wrapper-section .img-wrapper img{
+    max-width: 100%;
+}
+/** end of H E A D E R S E C T I O N */
+
+/**SECOND S E C T I O N */
+.second-section{
+    padding:3rem;
+}
+.wrap-center{
+    max-width: 960px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrap-center .left-content{
+    max-width: 450px;
+}
+.developer{
+    display: flex;
+    align-items: center;
+}
+.developer img{
+    clip-path: circle(50%);
+    width: 60px;
+    margin-right: 1rem; 
+}
+
+.wrap-center .left-content p{
+    font-size: 1.5rem;
+}
+.wrap-center .left-content .btn{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(20, 20, 29);
+    padding:0.8rem 1.2rem;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+}
+.wrap-center .img-wrapper{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:1rem;
+    grid-gap: 1rem;
+    align-items: center;
+}
+.wrap-center .img-wrapper img{
+    max-width: 100%;
+}/**end of second section*/
+/*Third S E C T I O N*/
+.third-section{
+    margin-top: 2rem;
+    padding:4rem;
+    background-color: rgb(20, 20, 29);
+    color:white;
+}
+.third-section .third-center{
+    max-width: 1200px;
+    margin:0 auto;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.third-section .right-cont{
+    width: 100%;
+}
+.third-section .right-cont .wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column-gap: 3rem;
+}
+.third-section .right-cont .wrapper-grid .grid-item p{
+    text-align: left;    
+}
+.third-section .right-cont .wrapper-grid .grid-item .btn-tutorial{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    background-color: #FF6366;
+    padding:0.8rem;
+    border-radius: 0.2rem;
+}
+.third-section .source{
+    margin-top:7rem;
+}
+.third-section .source p a{
+    text-decoration: none;
+    color: #FF6366;
+}
+/**end of third section*/
+/**F O U R T H S E C T I O N*/ 
+.fourth-section{
+    padding: 2rem;
+}
+.fourth-section .fourth-center{
+    max-width:1200px;
+    margin: 0 auto;
+    font-size:1.4rem;
+}
+.fourth-section .fourth-title{
+    padding:0.5rem;
+    font-size: 1.2rem;
+}
+.fourth-section .flex-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:1rem
+}
+ 
+.fourth-section .flex-wrapper .img-cont img{
+    max-width:100%;
+}
+.fourth-section .flex-wrapper .list-items .main-content{
+    padding:1rem;
+}
+.fourth-section .flex-wrapper .list-items .main-content p{
+    color:gray;
+}
+/**M E D I A Q U E R I E S OF FLEX-GRID*/
+@media only screen and (min-width:550px){
+    .fourth-section .flex-wrapper .list-items{
+        width: 42%;
+    }
+    .fourth-section .fourth-title{
+        padding:0.5rem;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:800px){
+    .fourth-section .flex-wrapper .list-items{
+        width: 23%;
+    }
+}
+/** end of F O U R T H S E C T I O N*/
+
+/**F O O T E R*/
+footer{
+    background-color: rgb(20,20,21);
+    padding:1rem;
+}
+footer .center-footer{
+    max-width: 1200px;
+    margin:0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer .brand p{
+    color:white;
+    font-size: 1.3rem;
+}
+footer h1{
+    margin: 0;
+}
+footer h1 a{
+    color:white;
+}
+footer .brand img{
+    clip-path: circle(50%);
+    width: 70px;
+    margin-right: 1rem;
+}
+footer .contacts p{
+    color:white;
+    font-size: 1.1rem;
+}
+.center-footer ul{
+    padding:0;
+    margin:0;
+    color:white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.center-footer ul li{
+    margin:1rem;
+    display: flex;
+    align-items: center;
+}
+.center-footer ul li a i{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color:white;
+}
+footer .brand{
+    flex:1;
+}
+footer .contacts{
+    flex: 1;
+    align-self: center;
+}
+footer .contacts small{
+    color:white;
+    font-size:1rem;
+}
+/** M E D I A Q U E R I E S OF F O O T E R*/
+@media only screen and (min-width:600px){
+    footer .center-footer{
+        flex-direction: row;
+        padding:2rem;
+    }
+    footer .brand{
+        border-right:0.1rem solid gray;
+        padding:1rem;
+    }
+    footer .brand p{
+        color:white;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}/** End of M E D I A Q U E R I E S OF F O O T E R*/
+/** END OF F O O T E R*/
+
+
+
+
+
+
+
+ /* M E D I A Q U E R I E S */
+ /** main nav center M E D I A Q U E R I E S*/
+@media only screen and (min-width:450px){         
+    .main-nav{
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    nav{
+        position: sticky;
+        top:0;
+        background-color: white;
+    }
+}
+ /**for grid COMBINATION */
+ @media only screen and (min-width:509px){
+    .third-section .third-center{
+        text-align: center;
+    }
+    .third-section .right-cont .wrapper-grid .grid-item p{
+        text-align: center;    
+    }
+    .third-section .wrapper-grid .grid-item:last-child{
+        grid-column: 1 / span 2;
+    }
+ }
+ /**for grid COMBINATION*/
+@media only screen and (min-width:750px){
+    /**for grid*/
+    .third-section .right-cont .wrapper-grid .grid-item p{
+        text-align: left;    
+    }
+    .third-section .third-center{
+        text-align: center;
+    }
+    .third-section .wrapper-grid{
+        grid-template-rows: fit-content;
+    }
+    .third-section .wrapper-grid .grid-item:last-child{
+        grid-column:initial;
+    }
+}/**END OF GRID FOR COMBINATION*/
+ 
+/**for tablet*/
+@media only screen and (min-width:550px){
+    .wrapper-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .wrap-center{
+        flex-direction: column;
+    }
+}
+ 
+/**desktop*/
+@media only screen and (min-width:700px){
+    /**main-nav*/
+    .nav-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-nav{
+        display: block;
+        margin-bottom: initial;
+    }/** end main nav */
+    /** header section*/
+    .wrapper-section{
+        flex-direction: row;
+        height: 100%;
+        text-align: left;
+    }
+    .section-header{
+        height: calc(100vh - 75.34px);
+    } /**end of header section*/
+    /**second section*/
+    .wrap-center{
+        flex-direction: row;
+    }/*end of second section*/
+
+}
+ 
+
+/** end of M E D I A Q U E R I E S */
+
+
+
+
+ 
